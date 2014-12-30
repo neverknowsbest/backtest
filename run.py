@@ -17,4 +17,4 @@ if __name__ == "__main__":
     portfolio = MarketOnOpenPortfolio(symbol, bars, signals, initial_capital=100000.0)
     returns = portfolio.backtest_portfolio()
 
-    print returns.tail(10)
+    print returns[590:610]
